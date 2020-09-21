@@ -1,0 +1,16 @@
+.header {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px 20px 0 20px;
+	background-color: rgb(13, 13, 13);
+	@import "headerBlocks/menu.scss"; 
+	@import "headerBlocks/burgerMenu.scss";
+	@import "headerBlocks/logo.scss";
+	@import "headerBlocks/icon-box.scss";
+}
+.header-bg {
+	background-color: rgba(27, 24, 24, 1);
+
+}

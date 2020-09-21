@@ -1,0 +1,18 @@
+@import "variables.scss";
+.container {
+	margin: 0 auto;
+	font-family: "Arial";
+	// max-width: 400px;
+	@import "header.scss";
+	@import "main.scss";
+	@import "footer.scss";
+	
+	@media screen and(min-width: $mobile-rotate) {
+
+	}
+}
+
+.hide {
+	display: none;
+}
+
