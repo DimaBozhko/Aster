@@ -1,12 +1,10 @@
 .main {
 	display: flex;
 	flex-wrap: wrap;
-
 	margin: 0;
 	@import "mainBlocks/banner.scss";
 	@import "mainBlocks/CatalogHeadline.scss";
 	@import "mainBlocks/catalog.scss";
 	@import "mainBlocks/about.scss";
 	@import "mainBlocks/contact-form.scss";
-
 }

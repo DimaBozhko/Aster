@@ -72,7 +72,6 @@
 		border: none;
 		.logo-box {
 			order: 1;
-
 			.logo-img {
 				width: 35px;
 				height: 35px;
@@ -95,24 +94,23 @@
 			.icon:nth-child(3) {
 				margin-right: 0;
 			}
+		}
+		.copyright-box {
+			width: auto;
+			order: 1;
+			margin: 0;
 
+			.copyright-icon {
+				width: 15px;
+				height: 15px;
+				fill: white;
+			}
+			.copyright-text {
+				padding-top: 5px;
+				font-size: 14px;
+				color: white;
+				margin:0 10px;
+			}
 		}
-	.copyright-box {
-		width: auto;
-		order: 1;
-		margin: 0;
-
-		.copyright-icon {
-			width: 15px;
-			height: 15px;
-			fill: white;
-		}
-		.copyright-text {
-			padding-top: 5px;
-			font-size: 14px;
-			color: white;
-			margin:0 10px;
-		}
-	}
 	}
 }

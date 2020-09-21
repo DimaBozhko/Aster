@@ -20,22 +20,23 @@ function style () {
   	.pipe(browserSync.stream())
 };
 
-function minimg () {
-    gulp.src("source/img/*")
+exports.minimg = () => {
+    gulp.src("source/img/jpg/*")
    	.pipe(imagemin())
-    .pipe(gulp.dest("dist/img"))	
+    .pipe(gulp.dest("dist/img/jpg"))	
 }
 
-function mincss () {
-  	gulp.src('source/css/style.css')
+exports.mincss = () => {
+    gulp.src('source/css/style.css')
     .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(gulp.dest('dist/css'))	
+    .pipe(gulp.dest('dist/css'))    
 }
+
 
 function watch () {
 	browserSync.init({
 		server: {
-			baseDir: "source/"
+			baseDir: "dist/"
 		}
 	})
 	gulp.watch("source/scss/**/*.scss", style);
@@ -45,5 +46,3 @@ function watch () {
 
 exports.style = style;
 exports.watch = watch;
-exports.mincss = mincss;
-exports.minimg = minimg;
